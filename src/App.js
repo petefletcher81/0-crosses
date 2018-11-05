@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import ButtonGrid from './components/buttonGrid';
+import Board from './components/Board';
 import Players from './components/players';
 import ScoreBoard from './components/scoreBoard';
+
 
 import './App.css';
 
@@ -28,7 +29,7 @@ class App extends Component {
       <div className="App">
         <h1>Hello World</h1>
         <Players players={this.state.players} />
-        <ButtonGrid />
+        <Board />
         <ScoreBoard />
       </div>
     );
