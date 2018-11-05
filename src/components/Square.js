@@ -1,14 +1,12 @@
-import React from 'react';
+import React from "react";
 
-class Square extends React.Component {
-  render() {
-    //console.log(this.props.value)
-    return (
-      <button className="square">
-        {this.props.value}
-      </button>
-    );
-  }
-}
+const Square = props => {
+  //(props)is simply the handleClick func being passed from board only invoked when clicked;
+  return (
+    <button className="square" onClick={() => props.onClick()}>
+      {props.value}
+    </button>
+  );
+};
 
 export default Square;
